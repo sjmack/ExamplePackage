@@ -1,0 +1,18 @@
+Package: ExamplePackage
+Title: Raise Numbers To Exponents And Calculate Factors Of Integers
+Version: 0.1.0.9000
+Authors@R: 
+    person(given = "Steven",
+           family = "Mack",
+           role = c("aut", "cre"),
+           email = "sjmack@chori.org",
+           comment = c(ORCID = "0000-0001-9820-9547"))
+Description: ExamplePackage includes two functions that calculate the powers and factors of numbers.
+License: GPL (>= 3)
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1.9000
+Imports: 
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr

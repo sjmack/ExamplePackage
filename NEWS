@@ -1,0 +1,13 @@
+Changes in version 0.1.0.9000 (2019-08-23)
+  o 2019-08-28
+  o Added 'primes' a dataset of the first 100,008 prime numbers, to the package.
+  o Updated the Vignette to account for this.
+
+Changes in version 0.0.0.9000 (2019-08-23)
+  o 2019-08-28
+  o Created the ExamplePackage R package
+  o Added powers() and factors() functions.
+  o Updated package DESCRIPTION.
+  o Created Vignette.
+  o Added NEWS.
+

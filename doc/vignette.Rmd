@@ -1,0 +1,51 @@
+---
+title: "ExamplePackage Vignette"
+author: "Steven J. Mack"
+date: "8/28/2019"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Example Vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+* Package Version: 0.1.0.9000
+
+## Overview
+
+This is an example R package created for the **UCSF R Packages Workshop**. 
+
+This package includes two functions -- `powers()` and `factors()` -- and `primes`, a dataset of the first 10008 prime numbers.
+
+## Functions
+
+### Powers
+
+The `powers()` function returns the value of `num` raised to `exp`. Both `num` and `exp` are expected to be numeric values. If `num` is not provided, a warning message will be returned. The default value of `exp` is 2. 
+
+For example:
+
+```{r example1}
+library("ExamplePackage")
+powers(27,0.5)
+powers(27,2)
+powers(primes$p[3],primes$p[6])
+powers()
+```
+### Factors
+
+The `factors()` function returns a vector containing all factors of `int`, a positive integer. If `int` is negative, a warning message will be returned. 
+
+For example:
+```{r example2}
+library("ExamplePackage")
+factors(1234)
+facts <- factors(1239)
+facts
+factors(-1239)
+factors(primes$p[3]*primes$p[6])
+```
+End of Vignette
